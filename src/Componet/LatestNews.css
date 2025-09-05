@@ -1,0 +1,154 @@
+:root {
+  --main-color: #36BFC4;
+  --semi-color: rgba(0, 123, 255, 0.8);
+}
+
+.latest-news-section {
+    padding: 60px 40px;
+
+    text-align: center;
+}
+
+.news-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.divider {
+    width: 40px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin: 10px auto 20px;
+    border-radius: 2px;
+}
+
+.news-header p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #666;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.news-card {
+    background: white;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: 0.3s ease;
+    border-radius: 4px;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-content {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    text-align: left;
+}
+
+.news-date {
+    background-color:var(--main-color);
+    color: white;
+    text-align: center;
+    height: 4rem;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.news-date span {
+    text-align: start;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+
+.news-date small {
+    text-align: start;
+    font-size: 18px;
+}
+
+.news-content h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.news-meta {
+    font-size: 13px;
+    color: #888;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.news-meta svg {
+    vertical-align: middle;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.news-content p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-content a {
+    font-size: 13px;
+    color: #00d6e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+.btn-load {
+
+    padding: 12px 24px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-load:hover {
+    background-color: var(--main-color);
+    color: #000;
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

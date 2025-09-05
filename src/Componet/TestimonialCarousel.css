@@ -1,0 +1,47 @@
+.testimonial-section {
+  padding: 60px 20px;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./Image/testi-bg.jpg") no-repeat center center/cover;
+  background-color: rgb(212, 221, 230);
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial-slide {
+  max-width: 400px;
+  margin: auto;
+}
+
+.testimonial-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 20px 0;
+  position: relative;
+}
+
+.quote-icon {
+  color: #00d6e0;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.quote-icon.left {
+  margin-right: 6px;
+}
+
+.quote-icon.right {
+  margin-left: 6px;
+}
+
+.client-name {
+  margin-top: 10px;
+  font-weight: bold;
+}

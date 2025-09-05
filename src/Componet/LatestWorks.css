@@ -1,0 +1,150 @@
+:root {
+  --main-color: #36BFC4;
+  --semi-color: rgba(0, 123, 255, 0.8);
+}
+
+.latest-works-section {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.header h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.divider {
+  width: 40px;
+  height: 4px;
+  background-color: var(--main-color);
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+.header p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #666;
+}
+
+.filters {
+  margin-bottom: 30px;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.filters .active,
+.filters button:hover {
+  color: #00d6e0;
+  font-weight: 500;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overlay-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.overlay-icons button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.overlay-icons button:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #000;
+}
+.btn-load {
+  
+  padding: 12px 24px;
+  border: 2px solid #00d6e0;
+  color: #00d6e0;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-load:hover {
+  background-color: var(--main-color);
+  color: #000;
+  transform: scale(1.05);
+  border-radius: 10px;
+}

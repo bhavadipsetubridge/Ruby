@@ -1,0 +1,104 @@
+.team-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.team-section .header {
+  max-width: 800px;
+  margin: auto;
+}
+
+.team-section .divider {
+  width: 60px;
+  height: 3px;
+  background-color: #00bcd4;
+  margin: 10px auto 20px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #777;
+}
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .overlay {
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    color: #333;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #00bcd4;
+    color: white;
+}

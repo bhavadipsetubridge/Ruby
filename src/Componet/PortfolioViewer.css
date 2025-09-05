@@ -1,0 +1,167 @@
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  
+}
+
+.portfolio-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  /* border-radius: 4px; */
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #555;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  max-width: 1100px;
+  width: 100%;
+}
+
+.image {
+  flex: 1 1 40%;
+  margin-right: 30px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1 1 50%;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.project-desc {
+  color: #747070;
+  margin-bottom: 20px;
+ font-size: small;
+}
+
+.project-details-heading {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.project-details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* .project-details li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.project-details li a {
+  color: teal;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+} */
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.detail-item .icon {
+   
+  font-size: 18px;
+  color: teal;
+}
+
+.detail-item a {
+  color: teal;
+  text-decoration: none;
+}
+
+.detail-item a:hover {
+  text-decoration: underline;
+}
+
+/* Restore styled button for live link */
+.live-link {
+  background-color: rgb(135, 207, 207);
+  color: rgb(14, 13, 13);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.live-link:hover {
+  background-color: #007777;
+}
+
+/* .live-link {
+  display: inline-block;
+ 
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.live-link:hover {
+  background-color: #007777;
+} */
+@media (max-width: 768px) {
+  .portfolio-content {
+    flex-direction: column;
+  }
+
+  .image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

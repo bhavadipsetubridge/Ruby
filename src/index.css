@@ -1,0 +1,70 @@
+:root {
+  --main-color: #36BFC4;
+  --semi-color: rgba(0, 123, 255, 0.8);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  transform: translateX(-20px);
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-top: 13px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+} */
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  /* margin-top: 10px; */
+
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+.nav-item.dropdown:hover>.nav-link {
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* Optional: smoother effect */
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+/* src/components/HeroSection.css */
