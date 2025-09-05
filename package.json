@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.7",
+    "@vercel/speed-insights": "^1.2.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "ogl": "^1.0.11",

@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Page/Home";
 import Portfolio from "./Page/Portfolio";
 import PortfolioSingle from "./Page/PortfolioSingle";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
     <>
+      <SpeedInsights />
       <Router>
         <Navbar />
         <Routes>
