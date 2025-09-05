@@ -10,7 +10,7 @@ const BlogList = () => {
   return (
     <section className="latest-news-section container">
       <div className="news-header">
-        <h2>BLOG</h2>
+        <h3>BLOG</h3>
         <div className="divider" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

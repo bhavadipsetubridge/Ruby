@@ -25,7 +25,7 @@ const BlogSingle = () => {
       <PortfolioBanner />
       <section className="latest-news-section container">
         <div className="news-header">
-          <h2>{post.title}</h2>
+          <h3>{post.title}</h3>
           <div className="divider" />
         </div>
 
