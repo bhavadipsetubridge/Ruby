@@ -6,18 +6,25 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Page/Home";
 import Portfolio from "./Page/Portfolio";
 import PortfolioSingle from "./Page/PortfolioSingle";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import Blog from "./Page/Blog";
+import BlogSingle from "./Page/BlogSingle";
+import NotFound from "./Page/NotFound";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
     <>
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
       <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogSingle />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio-single" element={<PortfolioSingle />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,0 +1,42 @@
+
+.news-header h2{
+  font-size: 100px;
+  font-weight: 900;
+  color: #36BFC4;
+}
+.notfound-section {
+  text-align: left;
+}
+
+.notfound-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.notfound-text {
+  flex: 1;
+}
+
+.notfound-image {
+  flex: 1;
+  text-align: right;
+}
+
+.notfound-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .notfound-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .notfound-image {
+    text-align: center;
+  }
+}
+
+

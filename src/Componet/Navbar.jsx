@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { blogPosts } from "./blogData";
 
 const Navbar = () => {
   return (
@@ -72,14 +73,17 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/blog">
                       BLOGS ARCHIVE
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link
+                      className="dropdown-item"
+                      to={`/blog/${blogPosts[0]?.id ?? 1}`}
+                    >
                       BLOGS-SINGAL
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -100,7 +104,7 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/404">
                       ERROR 404
                     </a>
                   </li>
