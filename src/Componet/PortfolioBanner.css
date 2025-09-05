@@ -1,6 +1,6 @@
 .portfolio-banner {
   position: relative;
-  background-image: url('/Image/breadgramb_bg.jpg'); /* Replace with your actual image path */
+  background-image: url('/Image/breadgramb_bg.jpg'); 
   background-size: cover;
   background-position: center;
   height: 250px;
